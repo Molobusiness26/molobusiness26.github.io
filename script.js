@@ -22,7 +22,7 @@
     a.addEventListener("click", function () { setMenu(false); });
   });
   window.addEventListener("resize", function () {
-    if (window.innerWidth > 1080) setMenu(false);
+    if (window.innerWidth > 1180) setMenu(false);
   });
 
   // Scroll reveal
@@ -161,6 +161,34 @@
     });
     update();
   }
+
+  // Currency toggle: switches every price marked with data-p (GBP,EUR,USD,AUD,NZD)
+  var CURS = ["GBP", "EUR", "USD", "AUD", "NZD"];
+  var SYMS = { GBP: "£", EUR: "€", USD: "US$", AUD: "A$", NZD: "NZ$" };
+  var curBtns = document.querySelectorAll(".cur__btn");
+  var calcCur = document.getElementById("calc-cur");
+  function setCurrency(code, fromCalc) {
+    var i = CURS.indexOf(code);
+    if (i < 0) return;
+    document.querySelectorAll("[data-p]").forEach(function (el) {
+      var v = el.getAttribute("data-p").split(",")[i];
+      el.textContent = SYMS[code] + v;
+    });
+    curBtns.forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-cur") === code ? "true" : "false");
+    });
+    document.querySelectorAll(".prices li[data-cur]").forEach(function (li) {
+      li.classList.toggle("is-active", li.getAttribute("data-cur") === code);
+    });
+    if (calcCur && !fromCalc && calcCur.value !== code) {
+      calcCur.value = code;
+      calcCur.dispatchEvent(new Event("change"));
+    }
+  }
+  curBtns.forEach(function (b) {
+    b.addEventListener("click", function () { setCurrency(b.getAttribute("data-cur")); });
+  });
+  if (calcCur) calcCur.addEventListener("change", function () { setCurrency(calcCur.value, true); });
 
   // Mobile sticky CTA: shows after the hero, hides once the closing CTA is reached
   var mbar = document.getElementById("mbar");
