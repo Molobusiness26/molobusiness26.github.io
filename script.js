@@ -1,3 +1,4 @@
+if (location.protocol === "http:" && location.hostname.indexOf("inkandoffer.com") !== -1) { location.replace("https://" + location.host + location.pathname + location.search + location.hash); }
 (function () {
   document.documentElement.classList.remove("no-js");
   var nav = document.querySelector(".nav");
