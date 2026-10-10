@@ -525,3 +525,4 @@ p { margin: 0 0 1em; }
 .path-card p { color: var(--muted); margin: 0; flex: 1; }
 @media (max-width: 760px) { .paths__grid { grid-template-columns: 1fr; } }
 .seekers--page h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1.1; }
+.nav__links { align-items: center; } .nav__links a { white-space: nowrap; }
