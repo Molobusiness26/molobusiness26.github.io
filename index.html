@@ -33,9 +33,11 @@
         <a class="wordmark" href="#top" aria-label="Ink &amp; Offer, back to top">Ink <span class="amp">&amp;</span> Offer</a>
         <nav aria-label="Main">
           <ul class="nav__links">
+            <li><a href="#partner">Partnering</a></li>
             <li><a href="#how">How it works</a></li>
             <li><a href="#samples">Samples</a></li>
             <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#calculator">Calculator</a></li>
             <li><a href="#trust">Trust</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
@@ -45,9 +47,11 @@
       </div>
       <div class="nav__mobile" id="mobile-menu">
         <ul>
+          <li><a href="#partner">Partnering</a></li>
           <li><a href="#how">How it works</a></li>
           <li><a href="#samples">Samples</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#calculator">Calculator</a></li>
           <li><a href="#trust">Trust</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -61,6 +65,7 @@
         <div class="hero__bg"><img src="hero-studio.jpg" alt="" fetchpriority="high" /></div>
         <div class="wrap">
           <div class="hero__copy">
+            <p class="status-pill reveal"><span class="status-pill__dot" aria-hidden="true"></span>Now taking on new partners</p>
             <p class="eyebrow reveal">White-label writing partner for career coaches</p>
             <h1 id="hero-title" class="reveal" style="--d:.06s">Tailored CVs and cover letters, delivered under your brand.</h1>
             <p class="hero__sub reveal" style="--d:.12s">Send us your client's CV and the job they want. Within 48 hours you get a polished, ATS-friendly CV and cover letter tailored to that role, ready to send as your own work.</p>
@@ -122,6 +127,37 @@
         </div>
       </section>
 
+      <!-- 3b. Ways to partner -->
+      <section class="section partner" id="partner" aria-labelledby="partner-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">Ways to partner</p>
+            <h2 id="partner-title">Three ways to work with us, depending on how you work.</h2>
+          </div>
+          <div class="cards cards--3">
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z" /><path d="M14 3v4h4M10 12h5M10 16h5" /></svg></div>
+              <h3>Pay as you go</h3>
+              <p>Pay per application, with no contract or minimum.</p>
+              <p class="card__tag">Ideal for independent coaches</p>
+            </article>
+            <article class="card reveal" style="--d:.08s">
+              <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2" /><path d="M4 10h16M9 3v4M15 3v4" /></svg></div>
+              <h3>Monthly volume</h3>
+              <p>10% off at 10+ applications a month, 15% off at 25+.</p>
+              <p class="card__tag">One monthly invoice</p>
+            </article>
+            <article class="card reveal" style="--d:.16s">
+              <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3" /><circle cx="17" cy="9" r="2.3" /><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M15 14.2c2.6-.4 4.8 1.3 5.5 4.3" /></svg></div>
+              <h3>Outplacement &amp; redundancy programmes</h3>
+              <p>A set price per employee for cohorts.</p>
+              <p class="card__tag">We work to your programme's timeline and format</p>
+            </article>
+          </div>
+          <p class="partner__note reveal"><span class="who__note">Every partner gets a single point of contact and a shared brief template.</span></p>
+        </div>
+      </section>
+
       <!-- 4. How it works -->
       <section class="section how" id="how" aria-labelledby="how-title">
         <div class="wrap">
@@ -151,6 +187,19 @@
               <p>Unbranded Word and PDF files within 48 hours, ready for your branding. One revision included.</p>
             </li>
           </ol>
+          <div class="send reveal">
+            <div>
+              <p class="price-card__label">What to send us</p>
+              <h3>Everything we need for a strong brief.</h3>
+            </div>
+            <ul class="checks send__list">
+              <li><svg aria-hidden="true"><use href="#i-check" /></svg>The client's current CV (Word or PDF)</li>
+              <li><svg aria-hidden="true"><use href="#i-check" /></svg>The job advert or link</li>
+              <li><svg aria-hidden="true"><use href="#i-check" /></svg>Target country</li>
+              <li><svg aria-hidden="true"><use href="#i-check" /></svg>Anything to emphasise or avoid (gaps, sensitive history)</li>
+              <li><svg aria-hidden="true"><use href="#i-check" /></svg>Your house template, if you have one</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -183,7 +232,10 @@
             <li>Teacher returning to work <span class="arrow" aria-label="to">→</span> L&amp;D (UK)</li>
             <li>Operations manager <span class="arrow" aria-label="to">→</span> program manager (US)</li>
           </ul>
-          <p class="samples__more">Want the full sample pack? <a class="text-link" href="mailto:hello@inkandoffer.com?subject=Sample%20pack">Email us</a></p>
+          <div class="samples__downloads reveal">
+            <a class="btn btn--primary" href="ink-and-offer-sample-pack.pdf" download><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" /></svg>Download the sample pack (PDF)</a>
+            <a class="btn btn--ghost" href="ink-and-offer-partner-overview.pdf" download><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" /></svg>Partner overview (PDF)</a>
+          </div>
         </div>
       </section>
 
@@ -210,6 +262,7 @@
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>One revision within 7 days</li>
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>Word + PDF, unbranded</li>
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>Free if we're more than 24 hours late</li>
+                <li><svg aria-hidden="true"><use href="#i-check" /></svg>Express 24-hour turnaround: ask about availability</li>
               </ul>
             </article>
             <article class="price-card price-card--volume reveal" style="--d:.1s">
@@ -222,11 +275,75 @@
               </ul>
             </article>
           </div>
+          <div class="compare-strip reveal">
+            <h3 class="compare-strip__title">How it compares</h3>
+            <ul class="compare-strip__cols">
+              <li><span class="compare-strip__name">Doing it yourself</span><span class="compare-strip__fig">2–3 hours</span><span class="compare-strip__desc">of your time per application</span></li>
+              <li><span class="compare-strip__name">Typical retail CV service</span><span class="compare-strip__fig">£85–£199</span><span class="compare-strip__desc">for a CV, around 3 days</span></li>
+              <li class="is-us"><span class="compare-strip__name">Ink &amp; Offer</span><span class="compare-strip__fig">£40</span><span class="compare-strip__desc">for a CV and cover letter, 48 hours, under your brand</span></li>
+            </ul>
+          </div>
           <div class="ribbon reveal">
             <p><span>Your first application is free:</span> try us on a real client, no commitment.</p>
             <a class="btn btn--brass" href="mailto:hello@inkandoffer.com?subject=Free%20sample%20request">Claim a free sample <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
           </div>
           <p class="fine">Prices exclude any applicable VAT/GST. Australian price quoted without GST for GST-registered businesses.</p>
+        </div>
+      </section>
+
+      <!-- 6b. Partner margin calculator -->
+      <section class="section calc-section" id="calculator" aria-labelledby="calc-title">
+        <div class="wrap">
+          <div class="section-head center reveal">
+            <p class="eyebrow">Partner margin calculator</p>
+            <h2 id="calc-title">See what handing off the writing is worth.</h2>
+          </div>
+          <form class="calc reveal" id="calc" novalidate>
+            <div class="calc__inputs">
+              <div class="field">
+                <label for="calc-price">What you charge your client per CV + cover letter</label>
+                <div class="field__row">
+                  <select id="calc-cur" aria-label="Currency">
+                    <option value="GBP" data-sym="£" data-ours="40" selected>GBP</option>
+                    <option value="EUR" data-sym="€" data-ours="45">EUR</option>
+                    <option value="USD" data-sym="US$" data-ours="55">USD</option>
+                    <option value="AUD" data-sym="A$" data-ours="85">AUD</option>
+                    <option value="NZD" data-sym="NZ$" data-ours="90">NZD</option>
+                  </select>
+                  <input id="calc-price" type="number" inputmode="decimal" min="0" step="5" value="150" />
+                </div>
+                <p class="field__hint">Our price: <strong id="calc-ours">£40</strong> per application</p>
+              </div>
+              <div class="field">
+                <label for="calc-vol">Applications per month <output id="calc-vol-out" for="calc-vol">8</output></label>
+                <input id="calc-vol" type="range" min="1" max="40" step="1" value="8" />
+                <div class="field__scale" aria-hidden="true"><span>1</span><span>10</span><span>25</span><span>40</span></div>
+              </div>
+              <div class="field">
+                <label for="calc-hours">Hours you spend writing each one</label>
+                <input id="calc-hours" type="number" inputmode="decimal" min="0" step="0.5" value="2.5" />
+              </div>
+            </div>
+            <div class="calc__out">
+              <div class="calc__fig">
+                <span class="calc__label">Monthly margin</span>
+                <span class="calc__num" id="out-margin">£880</span>
+                <span class="calc__note" id="out-discount" aria-live="polite">No volume discount below 10 a month: £40 each.</span>
+              </div>
+              <div class="calc__pair">
+                <div class="calc__fig">
+                  <span class="calc__label">Writing hours freed</span>
+                  <span class="calc__num calc__num--sm" id="out-hours">20 hrs</span>
+                </div>
+                <div class="calc__fig">
+                  <span class="calc__label">Effective hourly value of your freed time</span>
+                  <span class="calc__num calc__num--sm" id="out-rate">£44/hr</span>
+                </div>
+              </div>
+              <p class="calc__fine">Illustration only. Excludes VAT/GST.</p>
+              <a class="btn btn--brass" href="mailto:hello@inkandoffer.com?subject=Free%20sample%20request">Test it on a real client, free <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -246,6 +363,19 @@
             <li>Boutique outplacement firms</li>
           </ul>
           <p class="who__note reveal">We don't work with recruiters or job boards.</p>
+          <div class="roles">
+            <h3 class="roles__title reveal">Roles we write for</h3>
+            <ul class="pills pills--roles reveal">
+              <li>Finance &amp; accounting</li>
+              <li>FP&amp;A &amp; commercial finance</li>
+              <li>Operations &amp; supply chain</li>
+              <li>Project &amp; programme management</li>
+              <li>HR &amp; L&amp;D</li>
+              <li>Education leavers</li>
+              <li>Sales &amp; account management</li>
+              <li>Public sector &amp; military transitions</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -268,6 +398,30 @@
               <li><svg aria-hidden="true"><use href="#i-check" /></svg>We never contact your clients</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <!-- 8b. Partner promise -->
+      <section class="promise" id="promise" aria-labelledby="promise-title">
+        <div class="wrap promise__grid">
+          <div class="promise__intro reveal">
+            <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="seal-arc" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0" /></defs>
+              <circle cx="60" cy="60" r="58" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="1.5 3" />
+              <circle cx="60" cy="60" r="33" fill="none" stroke="currentColor" stroke-width="1" />
+              <text fill="currentColor" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="8.5" letter-spacing="1.6"><textPath href="#seal-arc" textLength="266" lengthAdjust="spacing">PARTNER PROMISE · INK &amp; OFFER ·</textPath></text>
+              <text x="60" y="73" text-anchor="middle" fill="currentColor" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="38">&amp;</text>
+            </svg>
+            <p class="eyebrow">Our partner promise</p>
+            <h2 id="promise-title">Four commitments on every order.</h2>
+          </div>
+          <ul class="promise__list">
+            <li class="reveal"><svg aria-hidden="true"><use href="#i-check" /></svg><div><h3>On time or it's free</h3><p>More than 24 hours late and you don't pay.</p></div></li>
+            <li class="reveal" style="--d:.08s"><svg aria-hidden="true"><use href="#i-check" /></svg><div><h3>Revised until it's right</h3><p>One revision within 7 days, and if we missed your brief, we rewrite it.</p></div></li>
+            <li class="reveal" style="--d:.16s"><svg aria-hidden="true"><use href="#i-check" /></svg><div><h3>Nothing invented</h3><p>Every claim traced to the source CV.</p></div></li>
+            <li class="reveal" style="--d:.24s"><svg aria-hidden="true"><use href="#i-check" /></svg><div><h3>Never seen by your client</h3><p>No names, logos or file metadata from us.</p></div></li>
+          </ul>
         </div>
       </section>
 
@@ -300,6 +454,18 @@
               <div class="faq__a"><p>Monthly invoice by bank transfer or card payment link; prepaid packs available.</p></div>
             </details>
             <details>
+              <summary>Is there a contract?<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq__a"><p>No. It's pay as you go, with written partner terms and a data processing agreement before the first order.</p></div>
+            </details>
+            <details>
+              <summary>How fast can you go?<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq__a"><p>Standard is 48 hours. 24-hour express can be arranged when capacity allows.</p></div>
+            </details>
+            <details>
+              <summary>Can you do LinkedIn profiles or CV-only orders?<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq__a"><p>Yes, on request. <a href="mailto:hello@inkandoffer.com?subject=Quote%20request">Ask us for a quote.</a></p></div>
+            </details>
+            <details>
               <summary>How do I start?<span class="plus" aria-hidden="true"></span></summary>
               <div class="faq__a"><p>Email one client's CV and the target advert to <a href="mailto:hello@inkandoffer.com">hello@inkandoffer.com</a> and we'll do the first one free.</p></div>
             </details>
@@ -328,13 +494,16 @@
           <div>
             <a class="wordmark" href="#top">Ink <span class="amp">&amp;</span> Offer</a>
             <p>White-label CV and cover letter writing for career coaches and outplacement firms.</p>
+            <p class="footer__terms">Partner terms and data processing agreement available on request.</p>
           </div>
           <nav aria-label="Footer">
             <ul class="footer__links">
               <li><a href="#why">Why us</a></li>
+              <li><a href="#partner">Partnering</a></li>
               <li><a href="#how">How it works</a></li>
               <li><a href="#samples">Samples</a></li>
               <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#calculator">Calculator</a></li>
               <li><a href="#trust">Trust</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -346,6 +515,10 @@
         </div>
       </div>
     </footer>
+
+    <div class="mbar" id="mbar" aria-hidden="true">
+      <a class="btn btn--primary" href="mailto:hello@inkandoffer.com?subject=Free%20sample%20request" tabindex="-1">Claim a free sample <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+    </div>
 
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Sample CV, enlarged" aria-hidden="true">
       <button class="lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
