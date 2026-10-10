@@ -504,3 +504,7 @@ p { margin: 0 0 1em; }
   .btn:hover, .card:hover, .paper:hover, .pills li:hover { transform: none; }
   .status-pill__dot::after { animation: none; opacity: 0; }
 }
+
+.wordmark__svg { height: 1.55em; width: auto; display: block; overflow: visible; }
+.footer .wordmark__svg { height: 1.7em; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
