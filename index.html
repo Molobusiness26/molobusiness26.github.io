@@ -39,6 +39,7 @@
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#calculator">Calculator</a></li>
             <li><a href="#trust">Trust</a></li>
+            <li><a href="#jobseekers">Job seekers</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </nav>
@@ -53,6 +54,7 @@
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#calculator">Calculator</a></li>
           <li><a href="#trust">Trust</a></li>
+          <li><a href="#jobseekers">Job seekers</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <a class="btn btn--primary" href="mailto:hello@inkandoffer.com?subject=Free%20sample%20request">Claim a free sample</a>
@@ -79,6 +81,7 @@
               <li><svg aria-hidden="true"><use href="#i-tick" /></svg>Every line human-checked</li>
               <li><svg aria-hidden="true"><use href="#i-tick" /></svg>Deleted after 30 days</li>
             </ul>
+            <p class="hero__alt reveal" style="--d:.3s"><a class="text-link" href="#jobseekers">Looking for help with your own CV? →</a></p>
           </div>
         </div>
       </section>
@@ -245,24 +248,31 @@
           <div class="section-head center reveal">
             <p class="eyebrow">Pricing</p>
             <h2 id="pricing-title">Simple per-application pricing</h2>
+            <div class="cur" role="group" aria-label="Show prices in">
+              <button type="button" class="cur__btn" data-cur="GBP" aria-pressed="true">GBP</button>
+              <button type="button" class="cur__btn" data-cur="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="cur__btn" data-cur="USD" aria-pressed="false">USD</button>
+              <button type="button" class="cur__btn" data-cur="AUD" aria-pressed="false">AUD</button>
+              <button type="button" class="cur__btn" data-cur="NZD" aria-pressed="false">NZD</button>
+            </div>
           </div>
           <div class="pricing__grid">
             <article class="price-card price-card--featured reveal">
               <p class="price-card__label">Per application</p>
               <h3>One application = <em>tailored CV + cover letter</em> for one job advert</h3>
               <ul class="prices" aria-label="Price per application by country">
-                <li><span class="country">UK</span><span class="amount">£40</span></li>
-                <li><span class="country">Ireland</span><span class="amount">€45</span></li>
-                <li><span class="country">US</span><span class="amount">US$55</span></li>
-                <li><span class="country">Australia</span><span class="amount">A$85</span></li>
-                <li><span class="country">New Zealand</span><span class="amount">NZ$90</span></li>
+                <li data-cur="GBP" class="is-active"><span class="country">UK</span><span class="amount">£40</span></li>
+                <li data-cur="EUR"><span class="country">Ireland</span><span class="amount">€45</span></li>
+                <li data-cur="USD"><span class="country">US</span><span class="amount">US$55</span></li>
+                <li data-cur="AUD"><span class="country">Australia</span><span class="amount">A$85</span></li>
+                <li data-cur="NZD"><span class="country">New Zealand</span><span class="amount">NZ$90</span></li>
               </ul>
               <ul class="checks">
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>48-hour turnaround</li>
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>One revision within 7 days</li>
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>Word + PDF, unbranded</li>
                 <li><svg aria-hidden="true"><use href="#i-check" /></svg>Free if we're more than 24 hours late</li>
-                <li><svg aria-hidden="true"><use href="#i-check" /></svg>Express 24-hour turnaround: ask about availability</li>
+                <li><svg aria-hidden="true"><use href="#i-check" /></svg>Express 24-hour: +50%, when capacity allows</li>
               </ul>
             </article>
             <article class="price-card price-card--volume reveal" style="--d:.1s">
@@ -274,13 +284,28 @@
                 <li><span class="big big--sm">5 · 10 · 25</span><span>Prepaid credit packs, valid 12 months</span></li>
               </ul>
             </article>
+            <article class="price-card price-card--addons reveal" style="--d:.2s">
+              <p class="price-card__label">Partner prices</p>
+              <h3>Add-ons &amp; extras</h3>
+              <table class="ptable" aria-label="Partner prices for add-ons and extras">
+                <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">CV only</th><td><span class="amt" data-p="30,35,40,65,70">£30</span></td></tr>
+                  <tr><th scope="row">Cover letter only</th><td><span class="amt" data-p="15,17,20,32,35">£15</span></td></tr>
+                  <tr><th scope="row">LinkedIn profile rewrite <small>Headline, About, experience</small></th><td><span class="amt" data-p="45,50,60,95,100">£45</span></td></tr>
+                  <tr><th scope="row">Bundle <small>CV + cover letter + LinkedIn profile</small></th><td><span class="amt" data-p="75,85,100,160,170">£75</span></td></tr>
+                  <tr><th scope="row">Express 24-hour <small>When capacity allows</small></th><td>+50%</td></tr>
+                </tbody>
+              </table>
+              <p class="fine">Volume discounts apply to everything except Express.</p>
+            </article>
           </div>
           <div class="compare-strip reveal">
             <h3 class="compare-strip__title">How it compares</h3>
             <ul class="compare-strip__cols">
               <li><span class="compare-strip__name">Doing it yourself</span><span class="compare-strip__fig">2–3 hours</span><span class="compare-strip__desc">of your time per application</span></li>
               <li><span class="compare-strip__name">Typical retail CV service</span><span class="compare-strip__fig">£85–£199</span><span class="compare-strip__desc">for a CV, around 3 days</span></li>
-              <li class="is-us"><span class="compare-strip__name">Ink &amp; Offer</span><span class="compare-strip__fig">£40</span><span class="compare-strip__desc">for a CV and cover letter, 48 hours, under your brand</span></li>
+              <li class="is-us"><span class="compare-strip__name">Ink &amp; Offer</span><span class="compare-strip__fig amt" data-p="40,45,55,85,90">£40</span><span class="compare-strip__desc">for a CV and cover letter, 48 hours, under your brand</span></li>
             </ul>
           </div>
           <div class="ribbon reveal">
@@ -425,6 +450,84 @@
         </div>
       </section>
 
+      <!-- 8c. Refer a coach -->
+      <section class="refer" aria-labelledby="refer-title">
+        <div class="wrap">
+          <div class="refer__box reveal">
+            <div>
+              <p class="price-card__label">Refer a coach</p>
+              <h2 id="refer-title" class="refer__title">Know another coach who'd use us? <em>When they pay their first invoice, you get 2 applications free.</em></h2>
+            </div>
+            <a class="btn btn--primary" href="mailto:hello@inkandoffer.com?subject=Referral">Refer a coach <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8d. For job seekers -->
+      <section class="section seekers" id="jobseekers" aria-labelledby="seekers-title">
+        <div class="wrap">
+          <div class="section-head center reveal">
+            <p class="eyebrow">For job seekers</p>
+            <h2 id="seekers-title">Applying yourself? We'll tailor it for you too.</h2>
+            <p class="lead">The same service our partner coaches use, direct to you. A CV and cover letter rewritten for the one job you want, checked line by line by a person, back in 48 hours.</p>
+            <div class="cur" role="group" aria-label="Show prices in">
+              <button type="button" class="cur__btn" data-cur="GBP" aria-pressed="true">GBP</button>
+              <button type="button" class="cur__btn" data-cur="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="cur__btn" data-cur="USD" aria-pressed="false">USD</button>
+              <button type="button" class="cur__btn" data-cur="AUD" aria-pressed="false">AUD</button>
+              <button type="button" class="cur__btn" data-cur="NZD" aria-pressed="false">NZD</button>
+            </div>
+          </div>
+          <ul class="seek-grid">
+            <li class="seek-card seek-card--featured reveal">
+              <p class="price-card__label">One application</p>
+              <p class="seek-card__fig amt" data-p="79,89,99,159,169">£79</p>
+              <p class="seek-card__what">CV + cover letter</p>
+            </li>
+            <li class="seek-card reveal" style="--d:.08s">
+              <p class="price-card__label">Each extra application</p>
+              <p class="seek-card__fig amt" data-p="49,55,65,99,105">£49</p>
+              <p class="seek-card__what">Within 90 days</p>
+            </li>
+            <li class="seek-card reveal" style="--d:.16s">
+              <p class="price-card__label">LinkedIn profile</p>
+              <p class="seek-card__fig amt" data-p="69,79,89,139,149">£69</p>
+              <p class="seek-card__what">Profile rewrite</p>
+            </li>
+            <li class="seek-card reveal" style="--d:.24s">
+              <p class="price-card__label">Express 24-hour</p>
+              <p class="seek-card__fig">+50%</p>
+              <p class="seek-card__what">On any order</p>
+            </li>
+          </ul>
+
+          <div class="vs reveal">
+            <h3 class="vs__title">Why not just use LinkedIn's built-in tailoring?</h3>
+            <div class="vs__scroll" role="region" aria-label="Comparison table" tabindex="0">
+              <table class="vs__table" aria-label="LinkedIn Premium tools, a typical CV service and Ink &amp; Offer compared">
+                <thead>
+                  <tr><th scope="col">Feature</th><th scope="col">LinkedIn Premium tools</th><th scope="col">Typical CV service</th><th scope="col" class="is-us">Ink &amp; Offer</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Cost</th><td>About US$30–40 a month subscription</td><td>£85–£199 for one CV</td><td class="is-us"><span class="amt" data-p="79,89,99,159,169">£79</span> for a tailored CV and cover letter</td></tr>
+                  <tr><th scope="row">Who checks it</th><td>Suggestions you accept yourself; nothing is fact-checked</td><td>A writer</td><td class="is-us">A person checks every line against your real experience</td></tr>
+                  <tr><th scope="row">Tailored to one job</th><td>From your profile, which must be complete</td><td>Usually one general CV</td><td class="is-us">Rewritten for the advert you choose</td></tr>
+                  <tr><th scope="row">Format</th><td>Generic format</td><td>Varies</td><td class="is-us">UK, Irish, US, Australian and NZ conventions</td></tr>
+                  <tr><th scope="row">Career gaps and career changes</th><td>Not handled</td><td>Sometimes</td><td class="is-us">Explained honestly and positively</td></tr>
+                  <tr><th scope="row">Turnaround</th><td>Instant draft you finish yourself</td><td>Around 3 days</td><td class="is-us">48 hours, finished</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="seekers__cta reveal">
+            <p class="seekers__fit">Ideal if you're returning to work, changing career, or haven't applied for a job in years.</p>
+            <a class="btn btn--primary btn--lg" href="mailto:hello@inkandoffer.com?subject=Job%20seeker%20order">Start my application <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+            <p class="fine">Send your current CV and the job advert. We'll confirm the price and timing before you pay. 14-day cancellation rights apply until work begins.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- 9. FAQ -->
       <section class="section faq" id="faq" aria-labelledby="faq-title">
         <div class="wrap">
@@ -459,11 +562,15 @@
             </details>
             <details>
               <summary>How fast can you go?<span class="plus" aria-hidden="true"></span></summary>
-              <div class="faq__a"><p>Standard is 48 hours. 24-hour express can be arranged when capacity allows.</p></div>
+              <div class="faq__a"><p>Standard is 48 hours. Express 24-hour is +50%, when capacity allows.</p></div>
             </details>
             <details>
               <summary>Can you do LinkedIn profiles or CV-only orders?<span class="plus" aria-hidden="true"></span></summary>
-              <div class="faq__a"><p>Yes, on request. <a href="mailto:hello@inkandoffer.com?subject=Quote%20request">Ask us for a quote.</a></p></div>
+              <div class="faq__a"><p>Yes. See <a href="#pricing">Add-ons &amp; extras</a> under Pricing, or <a href="mailto:hello@inkandoffer.com?subject=Quote%20request">ask us for a quote.</a></p></div>
+            </details>
+            <details>
+              <summary>Do you work with individuals as well as coaches?<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq__a"><p>Yes. Job seekers can order directly; see <a href="#jobseekers">For job seekers</a>. Partner coaches get trade prices.</p></div>
             </details>
             <details>
               <summary>How do I start?<span class="plus" aria-hidden="true"></span></summary>
@@ -505,6 +612,7 @@
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#calculator">Calculator</a></li>
               <li><a href="#trust">Trust</a></li>
+              <li><a href="#jobseekers">Job seekers</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </nav>
