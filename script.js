@@ -192,7 +192,7 @@
 
   // Mobile sticky CTA: shows after the hero, hides once the closing CTA is reached
   var mbar = document.getElementById("mbar");
-  var hero = document.querySelector(".hero");
+  var hero = document.querySelector(".hero") || document.querySelector(".page-hero");
   var cta = document.querySelector(".cta");
   if (mbar && hero && cta) {
     var mbarLink = mbar.querySelector("a");
