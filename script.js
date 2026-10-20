@@ -6,20 +6,22 @@ if (location.protocol === "http:" && location.hostname.indexOf("inkandoffer.com"
   var mobile = document.getElementById("mobile-menu");
 
   function onScroll() {
+    if (!nav) return;
     nav.classList.toggle("is-scrolled", window.scrollY > 12);
   }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
   function setMenu(open) {
+    if (!nav || !toggle) return;
     nav.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   }
-  toggle.addEventListener("click", function () {
+  if (toggle) toggle.addEventListener("click", function () {
     setMenu(!nav.classList.contains("is-open"));
   });
-  mobile.querySelectorAll("a").forEach(function (a) {
+  if (mobile) mobile.querySelectorAll("a").forEach(function (a) {
     a.addEventListener("click", function () { setMenu(false); });
   });
   window.addEventListener("resize", function () {
@@ -42,6 +44,7 @@ if (location.protocol === "http:" && location.hostname.indexOf("inkandoffer.com"
 
   // Lightbox: reuses the image already in the page, so nothing loads at run time
   var box = document.getElementById("lightbox");
+  if (box) {
   var boxInner = box.querySelector(".lightbox__inner");
   var boxCap = box.querySelector(".lightbox__cap");
   var closeBtn = box.querySelector(".lightbox__close");
@@ -82,6 +85,11 @@ if (location.protocol === "http:" && location.hostname.indexOf("inkandoffer.com"
     }
     if (e.key === "Tab" && box.classList.contains("is-open")) { e.preventDefault(); closeBtn.focus(); }
   });
+  } else {
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav && nav.classList.contains("is-open")) { setMenu(false); toggle.focus(); }
+    });
+  }
 
   // Partner margin calculator
   var calc = document.getElementById("calc");
