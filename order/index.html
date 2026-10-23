@@ -70,13 +70,16 @@
       <section class="section" aria-labelledby="order-title">
         <div class="wrap" style="max-width:760px">
           <div class="section-head center">
-            <p class="eyebrow">Payment received, thank you</p>
+            <p class="eyebrow">Your order brief</p>
             <h1 id="order-title">Now tell us about the job</h1>
-            <p class="lead">Upload your CV and the advert, and your 12-hour clock starts. Briefs sent between 8pm and 8am (UK time) start at 8am.</p>
+            <p class="lead">Upload your CV and the advert below. Your 12-hour clock starts once we have your complete brief, confirmed payment and permission to start.</p>
+            <p class="fine">If you choose to wait, work starts after your cancellation period ends. When all conditions are met between 8pm and 8am UK time, the clock starts at 8am. We'll confirm your delivery time by email.</p>
           </div>
           <div style="background:#fff;border:1px solid rgba(20,33,61,.12);border-radius:18px;padding:28px 24px;box-shadow:0 18px 40px -24px rgba(20,33,61,.35)">
-            <iframe id="brief" title="Ink &amp; Offer order brief" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border:0;min-height:600px" data-tally-src=""></iframe>
+            <p style="margin:0 0 16px">Can't see the form? <a id="brief-fallback" href="https://tally.so/r/kbaDz1" target="_blank" rel="noopener">Open the same order brief in a new tab</a>.</p>
+            <iframe id="brief" title="Ink &amp; Offer order brief" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border:0;min-height:600px" src="https://tally.so/embed/kbaDz1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" data-tally-src="https://tally.so/embed/kbaDz1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"></iframe>
           </div>
+          <p class="fine" style="text-align:center;margin-top:18px">We match your brief to confirmed payment before starting work. Sending this form does not make a payment.</p>
           <p class="fine" style="text-align:center;margin-top:18px">Your files are kept confidential and deleted 30 days after delivery. Questions? Email hello@inkandoffer.com.</p>
         </div>
       </section>
@@ -128,7 +131,7 @@
     <script src="/script.js"></script>
       <script data-goatcounter="https://inkandoffer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>
-(function(){var q=location.search.replace(/^\?/,'');var src='https://tally.so/embed/kbaDz1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1'+(q?'&'+q:'');var f=document.getElementById('brief');f.setAttribute('data-tally-src',src);
+(function(){var q=location.search.replace(/^\?/,'');var src='https://tally.so/embed/kbaDz1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1'+(q?'&'+q:'');var f=document.getElementById('brief');f.setAttribute('data-tally-src',src);if(q){f.src=src;document.getElementById('brief-fallback').href='https://tally.so/r/kbaDz1?'+q;}
 var s=document.createElement('script');s.src='https://tally.so/widgets/embed.js';s.onload=function(){if(window.Tally)Tally.loadEmbeds();else f.src=src;};s.onerror=function(){f.src=src;};document.body.appendChild(s);})();
 </script>
 </body>
